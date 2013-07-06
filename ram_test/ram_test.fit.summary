@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Jul 06 21:51:48 2013
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Full Version
+Revision Name : ram_test
+Top-level Entity Name : ram_test
+Family : Cyclone III
+Device : EP3C16F484C6
+Timing Models : Final
+Total logic elements : 1,376 / 15,408 ( 9 % )
+    Total combinational functions : 992 / 15,408 ( 6 % )
+    Dedicated logic registers : 889 / 15,408 ( 6 % )
+Total registers : 889
+Total pins : 37 / 347 ( 11 % )
+Total virtual pins : 0
+Total memory bits : 133,120 / 516,096 ( 26 % )
+Embedded Multiplier 9-bit elements : 18 / 112 ( 16 % )
+Total PLLs : 1 / 4 ( 25 % )

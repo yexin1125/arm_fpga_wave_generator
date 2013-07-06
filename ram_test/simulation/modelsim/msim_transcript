@@ -1,0 +1,197 @@
+# Reading D:/Moldsim65b/Moldsim65b/modelsim_ase/tcl/vsim/pref.tcl 
+# do ram_test_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying D:\Moldsim65b\Moldsim65b\modelsim_ase\win32aloem/modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/7.5/ram_test {D:/7.5/ram_test/ram_test.v}
+# ** Note: (vlog-1901) OptionFile "D:/quartus/quartus/work/test4/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module ram_test
+# 
+# Top level modules:
+# 	ram_test
+# vlog -vlog01compat -work work +incdir+D:/7.5/ram_test {D:/7.5/ram_test/ram.v}
+# ** Note: (vlog-1901) OptionFile "D:/quartus/quartus/work/test4/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# vlog -vlog01compat -work work +incdir+D:/7.5/ram_test {D:/7.5/ram_test/ram_vol.v}
+# ** Note: (vlog-1901) OptionFile "D:/quartus/quartus/work/test4/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module ram_vol
+# 
+# Top level modules:
+# 	ram_vol
+# vlog -vlog01compat -work work +incdir+D:/7.5/ram_test {D:/7.5/ram_test/pll.v}
+# ** Note: (vlog-1901) OptionFile "D:/quartus/quartus/work/test4/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# vlog -vlog01compat -work work +incdir+D:/7.5/ram_test/db {D:/7.5/ram_test/db/pll_altpll.v}
+# ** Note: (vlog-1901) OptionFile "D:/quartus/quartus/work/test4/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module pll_altpll
+# 
+# Top level modules:
+# 	pll_altpll
+# 
+# vlog -vlog01compat -work work +incdir+D:/7.5/ram_test {D:/7.5/ram_test/ram_test.v}
+# ** Note: (vlog-1901) OptionFile "D:/quartus/quartus/work/test4/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module ram_test
+# 
+# Top level modules:
+# 	ram_test
+# vlog -vlog01compat -work work +incdir+D:/7.5/ram_test/simulation/modelsim {D:/7.5/ram_test/simulation/modelsim/ram_test.vt}
+# ** Note: (vlog-1901) OptionFile "D:/quartus/quartus/work/test4/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module ram_test_vlg_tst
+# 
+# Top level modules:
+# 	ram_test_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc" ram_test_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps ram_test_vlg_tst 
+# Loading work.ram_test_vlg_tst
+# Loading work.ram_test
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ram_test' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /ram_test_vlg_tst/i1
+# Loading work.ram
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.ram_vol
+# Loading work.pll
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.MF_stratix_pll
+# Loading altera_mf_ver.stx_m_cntr
+# Loading altera_mf_ver.stx_n_cntr
+# Loading altera_mf_ver.stx_scale_cntr
+# Loading altera_mf_ver.MF_pll_reg
+# Loading altera_mf_ver.dffp
+# Loading altera_mf_ver.MF_stratixii_pll
+# Loading altera_mf_ver.arm_m_cntr
+# Loading altera_mf_ver.arm_n_cntr
+# Loading altera_mf_ver.arm_scale_cntr
+# Loading altera_mf_ver.MF_stratixiii_pll
+# Loading altera_mf_ver.ttn_m_cntr
+# Loading altera_mf_ver.ttn_n_cntr
+# Loading altera_mf_ver.ttn_scale_cntr
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+# Loading altera_mf_ver.MF_cycloneiiigl_pll
+# Loading altera_mf_ver.MF_cycloneiiigl_m_cntr
+# Loading altera_mf_ver.MF_cycloneiiigl_n_cntr
+# Loading altera_mf_ver.cycloneiiigl_post_divider
+# Loading altera_mf_ver.MF_cycloneiiigl_scale_cntr
+# Loading altera_mf_ver.pll_iobuf
+# ** Warning: (vsim-3015) D:/7.5/ram_test/ram_test.v(537): [PCDPC] - Port size (16 or 16) does not match connection size (10) for port 'data'.
+#         Region: /ram_test_vlg_tst/i1/ram_duration
+# ** Warning: (vsim-3015) D:/7.5/ram_test/ram_test.v(537): [PCDPC] - Port size (16 or 16) does not match connection size (10) for port 'q'.
+#         Region: /ram_test_vlg_tst/i1/ram_duration
+# ** Warning: (vsim-3016) D:/7.5/ram_test/ram.v(90): Port type is incompatible with connection (port 'wren_a').
+#         Region: /ram_test_vlg_tst/i1/ram_duration/altsyncram_component
+# ** Warning: (vsim-3016) D:/7.5/ram_test/ram_vol.v(90): Port type is incompatible with connection (port 'wren_a').
+#         Region: /ram_test_vlg_tst/i1/ram_voltagevalue/altsyncram_component
+# ** Warning: (vsim-3015) D:/7.5/ram_test/ram_test.v(559): [PCDPC] - Port size (16 or 16) does not match connection size (10) for port 'data'.
+#         Region: /ram_test_vlg_tst/i1/ram_duration_part1
+# ** Warning: (vsim-3015) D:/7.5/ram_test/ram_test.v(559): [PCDPC] - Port size (16 or 16) does not match connection size (10) for port 'q'.
+#         Region: /ram_test_vlg_tst/i1/ram_duration_part1
+# ** Warning: (vsim-3016) D:/7.5/ram_test/ram.v(90): Port type is incompatible with connection (port 'wren_a').
+#         Region: /ram_test_vlg_tst/i1/ram_duration_part1/altsyncram_component
+# ** Warning: (vsim-3015) D:/7.5/ram_test/ram_test.v(569): [PCDPC] - Port size (16 or 16) does not match connection size (10) for port 'data'.
+#         Region: /ram_test_vlg_tst/i1/ram_duration_part2
+# ** Warning: (vsim-3015) D:/7.5/ram_test/ram_test.v(569): [PCDPC] - Port size (16 or 16) does not match connection size (10) for port 'q'.
+#         Region: /ram_test_vlg_tst/i1/ram_duration_part2
+# ** Warning: (vsim-3016) D:/7.5/ram_test/ram.v(90): Port type is incompatible with connection (port 'wren_a').
+#         Region: /ram_test_vlg_tst/i1/ram_duration_part2/altsyncram_component
+# ** Warning: (vsim-3016) D:/7.5/ram_test/ram_vol.v(90): Port type is incompatible with connection (port 'wren_a').
+#         Region: /ram_test_vlg_tst/i1/ram_voltagevalue_part1/altsyncram_component
+# ** Warning: (vsim-3016) D:/7.5/ram_test/ram_vol.v(90): Port type is incompatible with connection (port 'wren_a').
+#         Region: /ram_test_vlg_tst/i1/ram_voltagevalue_part2/altsyncram_component
+# Updating msgviewer database...
+# WARNING: No extended dataflow License exists
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body
+# run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: ram_test_vlg_tst.i1.ram_duration.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: ram_test_vlg_tst.i1.ram_voltagevalue.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: ram_test_vlg_tst.i1.ram_duration_part1.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: ram_test_vlg_tst.i1.ram_duration_part2.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: ram_test_vlg_tst.i1.ram_voltagevalue_part1.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: ram_test_vlg_tst.i1.ram_voltagevalue_part2.altsyncram_component
+#  Note : Cyclone III PLL was reset
+# Time: 0  Instance: ram_test_vlg_tst.i1.pll_inst.altpll_component.pll3
+#  Note : Cyclone III PLL locked to incoming clock
+# Time: 27000  Instance: ram_test_vlg_tst.i1.pll_inst.altpll_component.pll3
+# Break key hit 
+# Break in Module MF_cycloneiii_pll at D:/Moldsim65b/Moldsim65b/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v line 16619
+# Updating msgviewer database...
+# Simulation Breakpoint: Break in Module MF_cycloneiii_pll at D:/Moldsim65b/Moldsim65b/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v line 16619
+# MACRO ./ram_test_run_msim_rtl_verilog.do PAUSED at line 22
+restart
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ram_test' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /ram_test_vlg_tst/i1
+# ** Warning: (vsim-3015) D:/7.5/ram_test/ram_test.v(537): [PCDPC] - Port size (16 or 16) does not match connection size (10) for port 'data'.
+#         Region: /ram_test_vlg_tst/i1/ram_duration
+# ** Warning: (vsim-3015) D:/7.5/ram_test/ram_test.v(537): [PCDPC] - Port size (16 or 16) does not match connection size (10) for port 'q'.
+#         Region: /ram_test_vlg_tst/i1/ram_duration
+# ** Warning: (vsim-3016) D:/7.5/ram_test/ram.v(90): Port type is incompatible with connection (port 'wren_a').
+#         Region: /ram_test_vlg_tst/i1/ram_duration/altsyncram_component
+# ** Warning: (vsim-3016) D:/7.5/ram_test/ram_vol.v(90): Port type is incompatible with connection (port 'wren_a').
+#         Region: /ram_test_vlg_tst/i1/ram_voltagevalue/altsyncram_component
+# ** Warning: (vsim-3015) D:/7.5/ram_test/ram_test.v(559): [PCDPC] - Port size (16 or 16) does not match connection size (10) for port 'data'.
+#         Region: /ram_test_vlg_tst/i1/ram_duration_part1
+# ** Warning: (vsim-3015) D:/7.5/ram_test/ram_test.v(559): [PCDPC] - Port size (16 or 16) does not match connection size (10) for port 'q'.
+#         Region: /ram_test_vlg_tst/i1/ram_duration_part1
+# ** Warning: (vsim-3016) D:/7.5/ram_test/ram.v(90): Port type is incompatible with connection (port 'wren_a').
+#         Region: /ram_test_vlg_tst/i1/ram_duration_part1/altsyncram_component
+# ** Warning: (vsim-3015) D:/7.5/ram_test/ram_test.v(569): [PCDPC] - Port size (16 or 16) does not match connection size (10) for port 'data'.
+#         Region: /ram_test_vlg_tst/i1/ram_duration_part2
+# ** Warning: (vsim-3015) D:/7.5/ram_test/ram_test.v(569): [PCDPC] - Port size (16 or 16) does not match connection size (10) for port 'q'.
+#         Region: /ram_test_vlg_tst/i1/ram_duration_part2
+# ** Warning: (vsim-3016) D:/7.5/ram_test/ram.v(90): Port type is incompatible with connection (port 'wren_a').
+#         Region: /ram_test_vlg_tst/i1/ram_duration_part2/altsyncram_component
+# ** Warning: (vsim-3016) D:/7.5/ram_test/ram_vol.v(90): Port type is incompatible with connection (port 'wren_a').
+#         Region: /ram_test_vlg_tst/i1/ram_voltagevalue_part1/altsyncram_component
+# ** Warning: (vsim-3016) D:/7.5/ram_test/ram_vol.v(90): Port type is incompatible with connection (port 'wren_a').
+#         Region: /ram_test_vlg_tst/i1/ram_voltagevalue_part2/altsyncram_component
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: ram_test_vlg_tst.i1.ram_duration.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: ram_test_vlg_tst.i1.ram_voltagevalue.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: ram_test_vlg_tst.i1.ram_duration_part1.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: ram_test_vlg_tst.i1.ram_duration_part2.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: ram_test_vlg_tst.i1.ram_voltagevalue_part1.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: ram_test_vlg_tst.i1.ram_voltagevalue_part2.altsyncram_component
+#  Note : Cyclone III PLL was reset
+# Time: 0  Instance: ram_test_vlg_tst.i1.pll_inst.altpll_component.pll3
+#  Note : Cyclone III PLL locked to incoming clock
+# Time: 27000  Instance: ram_test_vlg_tst.i1.pll_inst.altpll_component.pll3
+# Break key hit 
+# Simulation stop requested.

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Jul 06 21:51:11 2013
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Full Version
+Revision Name : ram_test
+Top-level Entity Name : ram_test
+Family : Cyclone III
+Total logic elements : 1,425
+    Total combinational functions : 990
+    Dedicated logic registers : 889
+Total registers : 889
+Total pins : 37
+Total virtual pins : 0
+Total memory bits : 133,120
+Embedded Multiplier 9-bit elements : 18
+Total PLLs : 1

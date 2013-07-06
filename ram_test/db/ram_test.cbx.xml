@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="ram_test">
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|pll:pll_inst|altpll:altpll_component" CBX_FILE_NAME="pll_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_mux:mux" CBX_FILE_NAME="mux_krc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:\adv_point_3_and_more:advance_pointer_counter" CBX_FILE_NAME="cntr_hfi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_mhm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|lpm_mult:Mult3|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_ffh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|lpm_mult:Mult4" CBX_FILE_NAME="mult_ibt.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|ram:ram_duration_part1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ifs1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_mhm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|ram:ram_duration_part2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ifs1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|ram:ram_duration|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ifs1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|ram_vol:ram_voltagevalue_part1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_8cs1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:read_pointer_counter" CBX_FILE_NAME="cntr_d8j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|lpm_mult:Mult2" CBX_FILE_NAME="mult_hbt.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|lpm_mult:Mult3|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_jfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|lpm_mult:Mult5|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|lpm_mult:Mult6" CBX_FILE_NAME="mult_kbt.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|ram_vol:ram_voltagevalue_part2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_8cs1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|ram_vol:ram_voltagevalue|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_8cs1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_pvs3.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_advance_pointer_counter" CBX_FILE_NAME="cntr_8fi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|lpm_mult:Mult0" CBX_FILE_NAME="mult_jbt.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|lpm_mult:Mult5|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_kfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_decode:wdecoder" CBX_FILE_NAME="decode_4uf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_read_pointer_counter" CBX_FILE_NAME="cntr_p1j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram_test|lpm_mult:Mult1" CBX_FILE_NAME="mult_jbt.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

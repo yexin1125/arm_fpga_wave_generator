@@ -1,0 +1,101 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\7.5\ram_test\simulation\modelsim
+vpll
+IdP6cCj1S0gdoV_eenTn]X2
+V4@5lWA_Qe>3l3HjGOH[jk1
+w1372950528
+8D:/7.5/ram_test/pll.v
+FD:/7.5/ram_test/pll.v
+L0 39
+Z1 OV;L;6.5b;42
+r1
+31
+Z2 o-vlog01compat -work work -O0
+Z3 !s92 -vlog01compat -work work +incdir+D:/7.5/ram_test -O0
+Z4 tCoverFEC 0 CoverShortCircuit 0
+!s100 S@PA5NPWNVn7;laJD48_n2
+!s85 0
+!s101 -O0
+vpll_altpll
+I?E?KaSnb?a]ogMP0XH71b2
+V?DF8j=RJ_EcKZlDzF;fMW0
+w1372950646
+8D:/7.5/ram_test/db/pll_altpll.v
+FD:/7.5/ram_test/db/pll_altpll.v
+L0 30
+R1
+r1
+31
+R2
+R4
+!s100 L8=[PSgj6m7K5>Ijn@ikO2
+!s85 0
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/7.5/ram_test/db -O0
+vram
+I5dV4K6mOR0D;bZJ?G]e<G0
+Ve_0Lz[ko=4GU<M@B7CeLW1
+w1372068214
+8D:/7.5/ram_test/ram.v
+FD:/7.5/ram_test/ram.v
+L0 39
+R1
+r1
+31
+R2
+R3
+R4
+!s100 B?mziRU`J?S[BLOe6=C?m1
+!s85 0
+!s101 -O0
+vram_test
+IAd8Db@1oj=D_[1KIGMHjm0
+V6<c6gUCzT[kJ6]P3DR9gH2
+w1373118543
+8D:/7.5/ram_test/ram_test.v
+FD:/7.5/ram_test/ram_test.v
+L0 5
+R1
+r1
+31
+R2
+R3
+R4
+!s100 l4c^<`DAa1S7z4J_bf1WL2
+!s85 0
+!s101 -O0
+vram_test_vlg_tst
+!s100 ZRU;ZLbP0E;3^R7K@`_7f1
+Iz5SH]@mDoCJCGDITFgk3g3
+VgFdKDI9gC94^HQKI1JCea2
+w1373120186
+8D:/7.5/ram_test/simulation/modelsim/ram_test.vt
+FD:/7.5/ram_test/simulation/modelsim/ram_test.vt
+L0 28
+R1
+r1
+!s85 0
+31
+!s101 -O0
+R2
+!s92 -vlog01compat -work work +incdir+D:/7.5/ram_test/simulation/modelsim -O0
+R4
+vram_vol
+IMd=3IQ4PjC_hAeVKzM<FG2
+VHfYSJnEgWb9OET5X1CW>33
+w1372068348
+8D:/7.5/ram_test/ram_vol.v
+FD:/7.5/ram_test/ram_vol.v
+L0 39
+R1
+r1
+31
+R2
+R3
+R4
+!s100 LgoM4Nl=;z;04lgWj`DOm0
+!s85 0
+!s101 -O0

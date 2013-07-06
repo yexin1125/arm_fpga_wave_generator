@@ -1,0 +1,681 @@
+// Copyright (C) 1991-2009 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "06/27/2013 00:17:53"
+                                                                                
+// Verilog Test Bench template for design : ram_test
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ns/ 1 ns
+module ram_test_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg clk;
+reg indata_GPBCON3;
+reg indata_GPBCON4;
+reg indata_GPBCON5;
+reg indata_GPBCON6;
+reg indata_GPBCON7;
+reg indata_GPBCON8;
+reg indata_GPBCON9;
+reg indata_GPBCON10;
+reg indata_GPCCON0;
+reg indata_GPCCON5;
+reg indata_GPCCON6;
+reg indata_GPCCON7;
+reg indata_GPECON1;
+reg indata_GPECON7;
+reg indata_GPECON8;
+reg indata_GPECON9;
+reg indata_GPECON10;
+reg indata_GPGCON1;
+reg indata_GPGCON3;
+reg indata_GPGCON6;
+reg indata_GPGCON8;
+reg indata_GPGCON11;
+reg indata_GPHCON5_clk;
+reg indata_GPJCON0;
+reg indata_GPJCON1;
+reg indata_GPJCON2;
+reg indata_GPJCON3;
+reg indata_GPJCON4;
+reg indata_GPJCON7;
+reg indata_GPJCON8;
+reg info_en;
+reg nreset;
+reg para_en;
+// wires                                               
+wire voltage_out;
+wire voltage_out_part1;
+wire voltage_out_part2;
+
+// assign statements (if any)                          
+ram_test i1 (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.indata_GPBCON3(indata_GPBCON3),
+	.indata_GPBCON4(indata_GPBCON4),
+	.indata_GPBCON5(indata_GPBCON5),
+	.indata_GPBCON6(indata_GPBCON6),
+	.indata_GPBCON7(indata_GPBCON7),
+	.indata_GPBCON8(indata_GPBCON8),
+	.indata_GPBCON9(indata_GPBCON9),
+	.indata_GPBCON10(indata_GPBCON10),
+	.indata_GPCCON0(indata_GPCCON0),
+	.indata_GPCCON5(indata_GPCCON5),
+	.indata_GPCCON6(indata_GPCCON6),
+	.indata_GPCCON7(indata_GPCCON7),
+	.indata_GPECON1(indata_GPECON1),
+	.indata_GPECON7(indata_GPECON7),
+	.indata_GPECON8(indata_GPECON8),
+	.indata_GPECON9(indata_GPECON9),
+	.indata_GPECON10(indata_GPECON10),
+	.indata_GPGCON1(indata_GPGCON1),
+	.indata_GPGCON3(indata_GPGCON3),
+	.indata_GPGCON6(indata_GPGCON6),
+	.indata_GPGCON8(indata_GPGCON8),
+	.indata_GPGCON11(indata_GPGCON11),
+	.indata_GPHCON5_clk(indata_GPHCON5_clk),
+	.indata_GPJCON0(indata_GPJCON0),
+	.indata_GPJCON1(indata_GPJCON1),
+	.indata_GPJCON2(indata_GPJCON2),
+	.indata_GPJCON3(indata_GPJCON3),
+	.indata_GPJCON4(indata_GPJCON4),
+	.indata_GPJCON7(indata_GPJCON7),
+	.indata_GPJCON8(indata_GPJCON8),
+	.info_en(info_en),
+	.nreset(nreset),
+	.para_en(para_en),
+	.voltage_out(voltage_out),
+	.voltage_out_part1(voltage_out_part1),
+	.voltage_out_part2(voltage_out_part2)
+);
+initial                                                
+begin                                                  
+	clk = 0;
+	nreset = 0;
+	para_en = 0;
+	info_en = 0;
+#10
+	nreset = 1;
+#50
+	indata_GPHCON5_clk = 1;
+	para_en = 1;
+	info_en = 0;
+	indata_GPCCON7 = 1;//indata_voltagelevel = 0;
+	indata_GPBCON4 = 1;	indata_GPBCON3 = 1;//indata_time_unit = s
+	//indata_accuracy=1000
+	indata_GPGCON11 = 1; indata_GPGCON8 = 1; indata_GPGCON6 = 1;indata_GPGCON3=1;indata_GPGCON1=1;
+	indata_GPECON10=0;indata_GPECON9=1;indata_GPECON8=0;indata_GPECON7=0;indata_GPECON1=0;
+	//indata_circletime=100
+	indata_GPCCON6 = 0;indata_GPCCON5=0;indata_GPCCON0=0;indata_GPJCON8=1;indata_GPJCON7=1;
+	indata_GPJCON4=0;indata_GPJCON3=0;indata_GPJCON2=1;indata_GPJCON1=0;indata_GPJCON0=0;
+	
+#500
+	indata_GPHCON5_clk = 0;
+#500
+	para_en = 0;
+	
+	indata_GPHCON5_clk = 1;
+	info_en = 1;
+	para_en = 0;
+	
+	
+	//3 level
+	indata_GPCCON5=0;indata_GPCCON0=1;
+	indata_GPECON10=0;indata_GPECON9=1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=1;
+	indata_GPECON8=0;indata_GPECON7=0;indata_GPECON1=0;indata_GPCCON7=0;indata_GPCCON6=0;indata_GPJCON8=0;indata_GPJCON7=0;indata_GPJCON4=0;indata_GPJCON3=0;indata_GPJCON2=1;
+	//indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	//indata_GPCCON5=0;indata_GPCCON0=1;//indata_voltagevalue = 1'b1;
+	
+#500
+	indata_GPHCON5_clk = 0;
+
+#500
+	indata_GPHCON5_clk = 1;
+	
+	indata_GPCCON5=1;indata_GPCCON0=1;
+	indata_GPECON10=0;indata_GPECON9=1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=1;
+	indata_GPECON8=0;indata_GPECON7=0;indata_GPECON1=0;indata_GPCCON7=0;indata_GPCCON6=0;indata_GPJCON8=0;indata_GPJCON7=0;indata_GPJCON4=0;indata_GPJCON3=0;indata_GPJCON2=1;
+
+	//indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	//indata_GPCCON5=1;indata_GPCCON0=1;
+
+#500
+	indata_GPHCON5_clk = 0;
+
+#500
+	indata_GPHCON5_clk = 1;
+	
+	indata_GPCCON5=1;indata_GPCCON0=1;
+	indata_GPECON10=1;indata_GPECON9=1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=1;
+	indata_GPECON8=0;indata_GPECON7=0;indata_GPECON1=0;indata_GPCCON7=0;indata_GPCCON6=0;indata_GPJCON8=0;indata_GPJCON7=0;indata_GPJCON4=0;indata_GPJCON3=0;indata_GPJCON2=1;
+
+	//indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	//indata_GPCCON5=0;indata_GPCCON0=1;
+	
+#500
+	indata_GPHCON5_clk = 0;
+#500
+	info_en = 0;
+
+#500
+	para_en = 1;
+	info_en = 1;
+#50000
+	para_en = 0;
+	info_en = 0;
+#100
+	indata_GPHCON5_clk = 1;
+#500
+	indata_GPHCON5_clk = 0;
+
+
+
+
+
+#500
+
+
+
+
+
+
+	indata_GPHCON5_clk = 1;
+	para_en = 1;
+	info_en = 0;
+	indata_GPCCON7 = 1;//indata_voltagelevel = 0;
+	indata_GPBCON4 = 1;	indata_GPBCON3 = 0;//indata_time_unit = ms
+	//indata_accuracy=1000
+	indata_GPGCON11 = 1; indata_GPGCON8 = 1; indata_GPGCON6 = 1;indata_GPGCON3=1;indata_GPGCON1=1;
+	indata_GPECON10=0;indata_GPECON9=1;indata_GPECON8=0;indata_GPECON7=0;indata_GPECON1=0;
+	//indata_circletime=100
+	indata_GPCCON6 = 0;indata_GPCCON5=0;indata_GPCCON0=0;indata_GPJCON8=1;indata_GPJCON7=1;
+	indata_GPJCON4=0;indata_GPJCON3=0;indata_GPJCON2=1;indata_GPJCON1=0;indata_GPJCON0=0;	
+	
+#500
+	indata_GPHCON5_clk = 0;
+#500
+	para_en = 0;
+	
+	indata_GPHCON5_clk = 1;
+	info_en = 1;
+	para_en = 0;
+	indata_GPCCON5=0;indata_GPCCON0=1;
+	indata_GPECON10=0;indata_GPECON9=1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=1;
+	indata_GPECON8=0;indata_GPECON7=0;indata_GPECON1=0;indata_GPCCON7=0;indata_GPCCON6=0;indata_GPJCON8=0;indata_GPJCON7=0;indata_GPJCON4=0;indata_GPJCON3=0;indata_GPJCON2=1;
+	
+	//indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=1;indata_GPBCON4=0;indata_GPBCON3=0;//indata_duration = 10'd100;
+	//indata_GPCCON5=0;indata_GPCCON0=1;//indata_voltagevalue = 1'b1;
+	
+#500
+	indata_GPHCON5_clk = 0;
+
+#500
+	indata_GPHCON5_clk = 1;
+	//indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	//indata_GPCCON5=1;indata_GPCCON0=1;
+	indata_GPCCON5=0;indata_GPCCON0=1;
+	indata_GPECON10=1;indata_GPECON9=1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=1;indata_GPBCON3=1;
+	indata_GPECON8=0;indata_GPECON7=0;indata_GPECON1=0;indata_GPCCON7=0;indata_GPCCON6=0;indata_GPJCON8=0;indata_GPJCON7=0;indata_GPJCON4=0;indata_GPJCON3=1;indata_GPJCON2=1;
+
+#500
+	indata_GPHCON5_clk = 0;
+
+#500
+	indata_GPHCON5_clk = 1;
+	//indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	//indata_GPCCON5=0;indata_GPCCON0=1;
+	indata_GPCCON5=1;indata_GPCCON0=1;
+	indata_GPECON10=1;indata_GPECON9=1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=1;
+	indata_GPECON8=0;indata_GPECON7=0;indata_GPECON1=0;indata_GPCCON7=0;indata_GPCCON6=0;indata_GPJCON8=0;indata_GPJCON7=0;indata_GPJCON4=0;indata_GPJCON3=0;indata_GPJCON2=1;
+	
+#500
+	indata_GPHCON5_clk = 0;
+#500
+	info_en = 0;
+
+#500
+	para_en = 1;
+	info_en = 1;
+#50000
+	para_en = 0;
+	info_en = 0;
+#100
+	indata_GPHCON5_clk = 1;
+#500
+	indata_GPHCON5_clk = 0;
+
+
+
+
+
+	indata_GPHCON5_clk = 1;
+	para_en = 1;
+	info_en = 0;
+	indata_GPCCON7 = 1;//indata_voltagelevel = 0;
+	
+	indata_GPBCON4 = 0;	indata_GPBCON3 = 1;//indata_time_unit = ms
+	indata_GPGCON11 = 1; indata_GPGCON8 = 1; indata_GPGCON6 = 1;indata_GPGCON3=1;indata_GPGCON1=1;
+	indata_GPECON10=0;indata_GPECON9=1;indata_GPECON8=0;indata_GPECON7=0;indata_GPECON1=0;
+	//indata_circletime=100
+	indata_GPCCON6 = 0;indata_GPCCON5=0;indata_GPCCON0=0;indata_GPJCON8=1;indata_GPJCON7=1;
+	indata_GPJCON4=0;indata_GPJCON3=0;indata_GPJCON2=1;indata_GPJCON1=0;indata_GPJCON0=0;	
+	
+	//indata_accuracy=1000
+	//indata_GPGCON11 = 1; indata_GPGCON8 = 1; indata_GPGCON6 = 1;indata_GPGCON3=1;indata_GPGCON1=1;
+	//indata_GPECON10=0;indata_GPECON9=1;indata_GPECON8=0;indata_GPECON7=0;indata_GPECON1=0;
+	//indata_circletime=100
+	//indata_GPCCON6 = 0;indata_GPCCON5=0;indata_GPCCON0=0;indata_GPJCON8=1;indata_GPJCON7=1;
+	//indata_GPJCON4=0;indata_GPJCON3=0;indata_GPJCON2=1;indata_GPJCON1=0;indata_GPJCON0=0;	
+	
+	
+#500
+	indata_GPHCON5_clk = 0;
+#500
+	para_en = 0;
+	
+	indata_GPHCON5_clk = 1;
+	info_en = 1;
+	para_en = 0;
+	
+	//indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	//indata_GPCCON5=0;indata_GPCCON0=1;//indata_voltagevalue = 1'b1;
+	indata_GPCCON5=0;indata_GPCCON0=1;
+	indata_GPECON10=0;indata_GPECON9=1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=1;
+	indata_GPECON8=0;indata_GPECON7=0;indata_GPECON1=0;indata_GPCCON7=0;indata_GPCCON6=0;indata_GPJCON8=0;indata_GPJCON7=0;indata_GPJCON4=0;indata_GPJCON3=0;indata_GPJCON2=1;
+
+#500
+	indata_GPHCON5_clk = 0;
+
+#500
+	indata_GPHCON5_clk = 1;
+	//indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	//indata_GPCCON5=1;indata_GPCCON0=1;
+	indata_GPCCON5=1;indata_GPCCON0=1;
+	indata_GPECON10=0;indata_GPECON9=1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=1;
+	indata_GPECON8=0;indata_GPECON7=0;indata_GPECON1=0;indata_GPCCON7=0;indata_GPCCON6=0;indata_GPJCON8=0;indata_GPJCON7=0;indata_GPJCON4=0;indata_GPJCON3=0;indata_GPJCON2=1;
+
+#500
+	indata_GPHCON5_clk = 0;
+
+#500
+	indata_GPHCON5_clk = 1;
+	//indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	//indata_GPCCON5=1;indata_GPCCON0=1;
+	indata_GPCCON5=1;indata_GPCCON0=1;
+	indata_GPECON10=1;indata_GPECON9=1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=1;
+	indata_GPECON8=0;indata_GPECON7=0;indata_GPECON1=0;indata_GPCCON7=0;indata_GPCCON6=0;indata_GPJCON8=0;indata_GPJCON7=0;indata_GPJCON4=0;indata_GPJCON3=0;indata_GPJCON2=1;
+	
+#500
+	indata_GPHCON5_clk = 0;
+		
+#500
+	indata_GPHCON5_clk = 1;
+	//indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	//indata_GPCCON5=1;indata_GPCCON0=1;
+	indata_GPCCON5=1;indata_GPCCON0=1;
+	indata_GPECON10=1;indata_GPECON9=1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=1;
+	indata_GPECON8=0;indata_GPECON7=0;indata_GPECON1=0;indata_GPCCON7=0;indata_GPCCON6=0;indata_GPJCON8=0;indata_GPJCON7=0;indata_GPJCON4=0;indata_GPJCON3=0;indata_GPJCON2=1;
+
+#500
+	indata_GPHCON5_clk = 0;
+
+#500
+	indata_GPHCON5_clk = 1;
+	//indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	//indata_GPCCON5=1;indata_GPCCON0=1;
+	indata_GPCCON5=1;indata_GPCCON0=1;
+	indata_GPECON10=1;indata_GPECON9=1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=1;
+	indata_GPECON8=0;indata_GPECON7=0;indata_GPECON1=0;indata_GPCCON7=0;indata_GPCCON6=0;indata_GPJCON8=0;indata_GPJCON7=0;indata_GPJCON4=0;indata_GPJCON3=0;indata_GPJCON2=1;
+
+#500
+	indata_GPHCON5_clk = 0;
+#500
+	indata_GPHCON5_clk = 1;
+	//indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	//indata_GPCCON5=1;indata_GPCCON0=1;
+	indata_GPCCON5=0;indata_GPCCON0=1;
+	indata_GPECON10=1;indata_GPECON9=1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=1;
+	indata_GPECON8=0;indata_GPECON7=0;indata_GPECON1=0;indata_GPCCON7=0;indata_GPCCON6=0;indata_GPJCON8=0;indata_GPJCON7=0;indata_GPJCON4=0;indata_GPJCON3=0;indata_GPJCON2=1;
+
+#500
+	indata_GPHCON5_clk = 0;
+#500
+	indata_GPHCON5_clk = 1;
+	//indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	//indata_GPCCON5=0;indata_GPCCON0=1;
+	indata_GPCCON5=1;indata_GPCCON0=1;
+	indata_GPECON10=0;indata_GPECON9=1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=1;
+	indata_GPECON8=0;indata_GPECON7=0;indata_GPECON1=0;indata_GPCCON7=0;indata_GPCCON6=0;indata_GPJCON8=0;indata_GPJCON7=0;indata_GPJCON4=0;indata_GPJCON3=0;indata_GPJCON2=1;
+
+#500
+	indata_GPHCON5_clk = 0;
+#500
+	info_en = 0;
+
+#500
+	para_en = 1;
+	info_en = 1;
+#50000
+	para_en = 0;
+	info_en = 0;
+#100
+	indata_GPHCON5_clk = 1;
+#500
+	indata_GPHCON5_clk = 0;
+	
+	
+/*	
+#500
+
+
+	
+	indata_GPHCON5_clk = 1;
+	para_en = 1;
+	info_en = 0;
+	indata_GPCCON7 = 1;//indata_voltagelevel = 0;
+#500
+	indata_GPHCON5_clk = 0;
+#500
+	para_en = 0;
+	
+	indata_GPHCON5_clk = 1;
+	info_en = 1;
+	para_en = 0;
+	
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	indata_GPCCON5=0;indata_GPCCON0=1;//indata_voltagevalue = 1'b1;
+	
+#500
+	indata_GPHCON5_clk = 0;
+
+#500
+	indata_GPHCON5_clk = 1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	indata_GPCCON5=1;indata_GPCCON0=1;
+
+#500
+	indata_GPHCON5_clk = 0;
+
+#500
+	indata_GPHCON5_clk = 1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	indata_GPCCON5=0;indata_GPCCON0=1;
+	
+#500
+	indata_GPHCON5_clk = 0;
+#500
+	info_en = 0;
+
+#500
+	para_en = 1;
+	info_en = 1;
+#50000
+	para_en = 0;
+	info_en = 0;
+#100
+	indata_GPHCON5_clk = 1;
+#500
+	indata_GPHCON5_clk = 0;
+	
+	
+	
+	
+#500
+
+	
+	indata_GPHCON5_clk = 1;
+	para_en = 1;
+	info_en = 0;
+	indata_GPCCON7 = 1;//indata_voltagelevel = 0;
+#500
+	indata_GPHCON5_clk = 0;
+#500
+	para_en = 0;
+	
+	indata_GPHCON5_clk = 1;
+	info_en = 1;
+	para_en = 0;
+	
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	indata_GPCCON5=0;indata_GPCCON0=1;//indata_voltagevalue = 1'b1;
+	
+#500
+	indata_GPHCON5_clk = 0;
+
+#500
+	indata_GPHCON5_clk = 1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	indata_GPCCON5=1;indata_GPCCON0=1;
+
+#500
+	indata_GPHCON5_clk = 0;
+
+#500
+	indata_GPHCON5_clk = 1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	indata_GPCCON5=0;indata_GPCCON0=1;
+	
+#500
+	indata_GPHCON5_clk = 0;
+#500
+	info_en = 0;
+
+#500
+	para_en = 1;
+	info_en = 1;
+#50000
+	para_en = 0;
+	info_en = 0;
+#100
+	indata_GPHCON5_clk = 1;
+#500
+	indata_GPHCON5_clk = 0;
+	
+
+
+
+
+#500
+	
+	
+	indata_GPHCON5_clk = 1;
+	para_en = 1;
+	info_en = 0;
+	indata_GPCCON7 = 1;//indata_voltagelevel = 0;
+#500
+	indata_GPHCON5_clk = 0;
+#500
+	para_en = 0;
+	
+	indata_GPHCON5_clk = 1;
+	info_en = 1;
+	para_en = 0;
+	
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	indata_GPCCON5=0;indata_GPCCON0=1;//indata_voltagevalue = 1'b1;
+	
+#500
+	indata_GPHCON5_clk = 0;
+
+#500
+	indata_GPHCON5_clk = 1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	indata_GPCCON5=1;indata_GPCCON0=1;
+
+#500
+	indata_GPHCON5_clk = 0;
+
+#500
+	indata_GPHCON5_clk = 1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	indata_GPCCON5=0;indata_GPCCON0=1;
+	
+#500
+	indata_GPHCON5_clk = 0;
+#500
+	info_en = 0;
+
+#500
+	para_en = 1;
+	info_en = 1;
+#50000
+	para_en = 0;
+	info_en = 0;
+#100
+	indata_GPHCON5_clk = 1;
+#500
+	indata_GPHCON5_clk = 0;
+	
+
+
+
+
+#500
+	
+	
+	indata_GPHCON5_clk = 1;
+	para_en = 1;
+	info_en = 0;
+	indata_GPCCON7 = 1;//indata_voltagelevel = 0;
+#500
+	indata_GPHCON5_clk = 0;
+#500
+	para_en = 0;
+	
+	indata_GPHCON5_clk = 1;
+	info_en = 1;
+	para_en = 0;
+	
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	indata_GPCCON5=0;indata_GPCCON0=1;//indata_voltagevalue = 1'b1;
+	
+#500
+	indata_GPHCON5_clk = 0;
+
+#500
+	indata_GPHCON5_clk = 1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	indata_GPCCON5=1;indata_GPCCON0=1;
+
+#500
+	indata_GPHCON5_clk = 0;
+
+#500
+	indata_GPHCON5_clk = 1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	indata_GPCCON5=0;indata_GPCCON0=1;
+	
+#500
+	indata_GPHCON5_clk = 0;
+#500
+	info_en = 0;
+
+#500
+	para_en = 1;
+	info_en = 1;
+#5000
+	para_en = 0;
+	info_en = 0;
+#100
+	indata_GPHCON5_clk = 1;
+#500
+	indata_GPHCON5_clk = 0;
+	
+
+
+
+
+#500
+
+
+	indata_GPHCON5_clk = 1;
+	para_en = 1;
+	info_en = 0;
+	indata_GPCCON7 = 1;//indata_voltagelevel = 0;
+#500
+	indata_GPHCON5_clk = 0;
+#500
+	para_en = 0;
+	
+	indata_GPHCON5_clk = 1;
+	info_en = 1;
+	para_en = 0;
+	
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	indata_GPCCON5=0;indata_GPCCON0=1;//indata_voltagevalue = 1'b1;
+	
+#500
+	indata_GPHCON5_clk = 0;
+
+#500
+	indata_GPHCON5_clk = 1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	indata_GPCCON5=1;indata_GPCCON0=1;
+
+#500
+	indata_GPHCON5_clk = 0;
+
+#500
+	indata_GPHCON5_clk = 1;
+	indata_GPJCON1=0;indata_GPJCON0=0;indata_GPBCON10=0;indata_GPBCON9=0;indata_GPBCON8=0;indata_GPBCON7=0;indata_GPBCON6=0;indata_GPBCON5=0;indata_GPBCON4=0;indata_GPBCON3=0;indata_GPBCON3=1;//indata_duration = 10'd100;
+	indata_GPCCON5=0;indata_GPCCON0=1;
+	
+#500
+	indata_GPHCON5_clk = 0;
+#500
+	info_en = 0;
+
+#500
+	para_en = 1;
+	info_en = 1;
+#50000
+	para_en = 0;
+	info_en = 0;
+#100
+	indata_GPHCON5_clk = 1;
+#500
+	indata_GPHCON5_clk = 0;	
+*/
+end                                                    
+always                                                 
+                
+begin                                                  
+#1  clk = ~clk;                                              
+end          
+endmodule
+
